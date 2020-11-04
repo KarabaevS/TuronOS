@@ -1,0 +1,1832 @@
+@font-face{
+    src: url("../fonts/Gilroy-Light.woff");
+    font-family: "Girloy Light";
+}
+@font-face{
+    src: url("../fonts/Gilroy-Bold.woff");
+    font-family: "Girloy Bold";
+}
+@font-face{
+    src: url("../fonts/Gilroy-Black.woff");
+    font-family: "Girloy Black";
+}
+@font-face{
+    src: url("../fonts/Gilroy-Regular.woff");
+    font-family: "Girloy Regular";
+}
+@font-face{
+    src: url("../fonts/Gilroy-SemiBold.woff");
+    font-family: "Girloy SemiBold";
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+    cursor: pointer;
+    outline: none;
+}
+img{
+    width: 100%;
+}
+.top-header{
+    position: relative;
+    padding: 26px 0px;
+}
+.nav-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-text{
+    max-width: 193px;
+    width: 100%;
+    font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+color: #7A7B7C;
+}
+.nav-number{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 32px;
+letter-spacing: -0.04em;
+color: #3661D6;
+}
+header button{
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: #3661D6;
+border-radius: 6px;
+padding: 10px 14px;
+transition: all 0.3s ease-in-out;
+
+}
+header button:hover,
+.service button:hover,
+.app-btn button:hover,
+.tarif-card-button button:hover,
+.question-card-button button:hover,
+.footer-btn button:hover,
+.account-form button:hover,
+.modal-menu button:hover{
+    background-color: #1847ca;
+    outline: none;
+}
+header button svg{
+    fill: #fff;
+}
+.header-btn-text{
+    font-family: "Girloy Bold";
+    margin-left: 14px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.selectric{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+.selectric .button{
+    background-color: inherit;
+}
+.selectric-lang{
+
+    width: 216px;
+    height: 37px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #E7E8E8;
+    left: 0px;
+    top: 115px;
+}
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+.menu-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  
+}
+.selectric-wrapper{
+    position: relative;
+}
+.selectric-wrapper::before{
+    content: "";
+    position: absolute;
+    src: url("/img/uzbek.png");
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+}
+.selectric-items li.highlighted{
+    width: 100%;
+}
+.selectric-items ul{
+    margin-top: 0px;
+}
+.selectric-scroll ul li{
+    margin-right: 0px !important;
+    width: 100%;
+}
+.selectric-scroll{
+    background-color: #fff;
+}
+.menu-wrapper ul li{
+    list-style: none;
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+}
+.menu-wrapper ul li a{
+    color: #000;
+  
+  
+}
+.menu-wrapper ul li a:hover,
+.footer-second ul li a:hover{
+    color: #EA6A22;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.menu-wrapper ul li:not(:last-child){
+    margin-right: 50px;
+}
+.selectric-hide-select.selectric-is-native select{
+    background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06)
+}
+.service{
+    background: url("../img/Mask\ Group.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 57px;
+    position: relative;
+}
+.service::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 47px;
+    background: #E8E8E8;
+    bottom:120px;
+    left: 0;
+}
+.service-wrapper{
+    display: flex;
+}
+.service-title{
+    font-family: "Girloy Black";
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 60px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #EA6A22;
+
+}
+.service-text{
+    font-family: "Girloy SemiBold";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 40px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 50px;
+
+}
+.service-text span{
+    font-family: "Girloy Black";
+    color: #3661D6;
+}
+.service-order-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 22px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 10px;
+}
+.service-order-text{
+    font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 10px;
+}
+.service input{
+    background: #FFFFFF;
+border: 1px solid #E3E3E3;
+box-sizing: border-box;
+border-radius: 6px;
+Width: 239px;
+Height:48px;
+padding-left: 18px;    
+}
+.service input::placeholder,
+.modal-name input::placeholder{
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #0B1742;
+}
+.service input[type="number"]::placeholder,
+.modal-phone input::placeholder{
+    font-family: "Girloy Light";
+    color: #ADAEB0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.service button{
+    background: #3661D6;
+    border-radius: 6px;
+    border: none;
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+padding: 16px 28px;
+}
+.service-order{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 32px 42px;
+}
+.service-right{
+    padding-bottom: 56px;
+}
+.service-left{
+    display: flex;  
+}
+.service-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.econom{
+    margin-top: 70px;
+}
+.econom-content{
+    display: flex;
+    
+}
+.econom-title{
+    font-family: "Girloy Black";
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+padding: 0 150px;
+}
+.econom-title span{
+    color: #EA6A22;
+}
+.econom-text{
+    font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+text-align: right;
+letter-spacing: 0.03em;
+color: #000000;
+margin-right: 20px;
+}
+.econom-text-left{
+    font-family: "Girloy Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-left: 20px;
+    text-align: left;
+}
+.econom-card-1{
+    max-width: 40%;
+
+}
+.econom-img{
+    max-width: 20%  ;
+}
+.econom-card-3{
+    max-width: 40%;
+}
+.econom-content{
+    margin-top: 40px;
+}
+
+.econom-card-1 .econom-card-content{
+    padding-left: 20px;
+}
+.econom-card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.econom-card-content.prev{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.econom-card-content.top{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.econom-card-content.next{
+    margin-right: 66px;
+}
+.econom-card-content.bottom{
+    margin-left: 66px;
+}
+.econom-card-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.econom-card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.application{
+    background: url("../img/Mask Group1.png");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 52px 0px;
+}
+.app-text{
+    max-width: 60%;
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+}
+.app-text span{
+    color: #EA6A22;
+}
+.app-btn{
+    max-width: 40%;
+}
+.app-btn button{
+    font-family: "Girloy Bold";
+font-style: normal;
+border:none;
+font-weight: bold;
+font-size: 16px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #3661D6;
+border-radius: 6px;
+padding: 17px 50px;
+margin-left: 55px;
+}
+
+.application{
+    position: relative;
+}
+.application img{
+    width: unset;
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+}
+.tarif{
+    padding: 70px 0 100px 0;
+}
+.tarif-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 28px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 45px;
+}
+.tarif-card-title{
+    font-family: "GirLoy Bold";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    background: #E5E5E5;
+    height: 99px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarif-card{
+    background: #FFFFFF;
+box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+padding-bottom: 35px;
+position: relative;
+cursor: pointer;
+transition: all 0.4s ease-in-out;
+}
+.tarif-card:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.tarif-card:hover .tarif-card-title{
+    background: #1A7CC2;
+    transition: all 0.2s ease-in-out;
+}
+.tarif-card:hover.tarif-card::before{
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+.tarif-card:hover .tarif-card-title{
+    color: #fff;
+}
+.tarif-card-list ul{
+    margin-left: 20px;
+    padding: 0 30px;
+    
+}
+.tarif-card::before{
+    content: "";
+    position: absolute;
+    background: url("../img/kisspng-paper-drawing-pin-clip-art-red-push-pin-5aaaab6c6aea18 4.png");
+    background-size: cover;
+    width: 58px;
+    height: 57px;
+    top: -9px;
+    left: 90px;
+    transition: all 0.4s ease-in-out;   
+}
+.tarif-card-list ul li{
+    font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+list-style: none;
+position: relative;
+margin-top: 28px;
+
+}
+.tarif-card-list ul li::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: -16px;
+    background: #EA6A22;
+    border-radius: 50px;
+transform: rotate(-45deg);
+}
+.tarif-card-price{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #013254;
+margin-bottom: 24px;
+}
+.tarif-card-button button{
+font-family: "Girloy Bold";
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #3661D6;
+border-radius: 6px;
+border: none;
+padding: 12px 45px;
+}
+.tarif-card-button{
+    display: flex;
+    justify-content: center;
+}
+.about{
+    background: #F8F8F8;
+}
+.about-img{
+    height: 540px;
+}
+.about-img{
+    position: relative;
+}
+.about-img::after{
+    content: "";
+    position: absolute;
+    background: url("../img/about-girl.png");
+    height: 440px;
+    width: 567px;
+    top: -45px;
+    right: 0;
+}
+.about-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 28px;
+line-height: 40px;
+text-transform: uppercase;
+font-feature-settings: 'tnum' on, 'onum' on;
+color: #000000;
+margin-top: 40px;
+}
+.about-title-top,
+.about-title-mid,
+.about-title-bottom{
+font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-top: 20px;
+}
+.about{
+    height: 393px;
+}
+.about-wrapper{
+    position: relative;
+}
+.img-glass img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    bottom: -110px;
+    left: -170px;
+}
+.advantages{
+    margin: 80px 0px 100px 0px;
+}
+.advantages-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+text-align: center;
+}
+.advantages-card{
+    display: flex;
+    justify-content: center;    
+}
+.advantages-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+}
+.advantages-card-text{
+    text-align: center;
+    font-family: "Girloy Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding: 0 20px;
+}
+.advantages-card-title{
+    font-family: "Girloy SemiBold"; 
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+color: #EA6A22;
+margin: 15px 0 10px 0;
+}
+.account{
+    background: url("../img/Mask Group3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+}
+.account-text{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 20px;
+}
+.account-text span{
+    color: #EA6A22;
+}
+.account-content{
+    display: flex;
+    flex-direction: column;
+}
+.account-form{
+    display: flex;
+}
+.account .col-lg-8{
+    display: flex;
+    align-items: center;
+}
+.account-form input{
+    background: #FFFFFF;
+border: 1px solid #D0D0D1;
+box-sizing: border-box;
+Width:352px;
+Height: 50px;
+border-radius: 6px;
+outline: none;
+padding-left: 16px;
+}
+.account-form button{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #3661D6;
+border-radius: 6px;
+padding: 17px 74px;
+border: none;
+outline: none;
+margin-left: 30px;
+}
+.account img{
+    position: absolute;
+    width: unset;
+    top: -20px;
+}
+.account .container{
+    height: 100%;
+}
+.account .row{
+    height: 100%;
+}
+.work{
+    margin: 65px 0;
+   
+    
+}
+.reviews{
+    position: relative;
+}
+.work-img1{
+    width: unset;
+    position: absolute;
+    left: 0;
+    top: -85px;
+    
+}
+.work-img2{
+    top: -85px;
+    right: 0;
+    width: unset;
+    position: absolute;
+}
+
+.work-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 28px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 60px;
+text-align: center;
+}
+.work .col-lg-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.work-icon{
+    margin-bottom: 20px;
+}
+.woork-text{
+font-family: "Girloy Regular";
+font-style: normal;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+.reviews .row{
+    justify-content: center;
+}
+.row.reviews-content{
+    padding-bottom: 110px;
+}
+.reviews-title{
+    font-family: "Girloy Bold";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 110px 0 56px 0;
+
+}
+.work-card-title{
+    font-family: "Girloy SemiBold";
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 16px;
+color: #000000;
+margin: 20px 0 5px 0;
+}
+.work-card-span{
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #0069B4;
+}
+.questions{
+    overflow: hidden;
+}
+.reviews-question{
+    background-image: url("../img/qiestions-bg.png");
+    z-index: 99;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reviews-question img{
+    position: absolute;
+    top: -30px;
+}
+.question-card-title{
+    font-family:"Girloy Black";
+    font-style: normal;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin: 37px 0px 15px 0;
+}
+.question-card-text{
+    font-family: "Girloy Light";    
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 28px;
+}
+.question-card-button{
+    display: flex;
+    justify-content: space-between;
+}
+.question-card-button button{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 16px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+border: none;
+background: #3661D6;
+border-radius: 6px;
+padding: 17px 100px;
+margin-bottom: 44px;
+}
+.question-card-button a{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 32px;
+letter-spacing: -0.04em;
+color: #EA6A22;
+}
+.map{
+    padding: 30px 0;
+}
+#map{
+    height: 450px;
+    width: 100%;
+}
+footer{
+    background-color: #F6F6F6;
+    padding-top: 50px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+footer li{
+    list-style: none;
+}
+.footer-third ul li a{
+    display: flex;
+    align-items: center;
+}
+.footer-four button{
+    display: flex;
+    align-items: center;
+}
+.footer-five ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-five ul li:not(:first-child){
+    margin-left: 40px;
+}
+.footer-second ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+.footer-second ul li a{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;
+}
+.footer-third ul li:not(:last-child){
+    margin-bottom: 32px;
+}
+.footer-third ul li a{
+    font-family:"Girloy light";
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 18px;
+color: #000000;
+}
+
+.footer-third ul li a svg{
+    margin-right: 10px;
+}
+.footer-btn button{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 14px;
+border: none;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #3661D6;
+border-radius: 6px;
+padding: 9px 16px;
+}
+.footer-btn button svg{
+    margin-right: 15px;
+}
+.footer-phone{
+    
+font-family:"Girloy Bold";
+font-style: normal;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: -0.04em;
+color: #3661D6;
+margin-top: 30px;
+
+}
+.footer-five-title{
+font-family: "Girloy Bold";
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #EA6A22;
+margin-bottom: 20px;
+}
+.footer-lisince{
+    font-family: "Girloy Light";
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 138%;
+text-align: right;
+letter-spacing: 0.28px;
+color: #2F3A5E;
+}
+.select{
+    position: relative;
+}
+.select_current{
+    display: flex;
+   
+}
+.select img{
+    margin-right: 7px;
+}
+.select.is_active .select_body{
+    display: flex;
+    z-index: 1;
+}
+.select_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: #fff;
+    position: absolute;
+    display: none;
+}
+.select_item{
+    padding: 8px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+.select_header{
+  
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.select_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;   
+}
+.uzbek-p,
+.rus-p{
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #333333;
+padding-right: 82px;
+}
+.modal-menu.is_active{
+    display: block;
+}
+.modal-menu{
+    position: fixed;
+    z-index: 2;
+    background: #FFFFFF;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+    padding: 32px 44px;    
+    max-width: 454px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+
+}
+.modal-name{
+    display: flex;
+    flex-direction: column;
+}
+.modal-phone{
+    display: flex;
+    flex-direction: column;
+}
+.modal-title{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 24px;
+line-height: 22px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 20px;
+}
+.modal-text{
+    font-family: "Girloy Light";
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 20px;
+}
+.modal-name label,
+.modal-phone label{
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+color: #898A8D;
+}
+.modal-name input{
+    margin-bottom: 20px;
+    border: 1px solid #D0D0D1;  
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 48px;
+    padding-left: 16px;
+}
+.modal-phone input{
+    height: 48px;
+    padding-left: 16px;
+    margin-bottom: 33px;
+    border: 1px solid #D0D0D1;
+box-sizing: border-box;
+border-radius: 6px;
+}
+.close_icon{
+    position: absolute;
+    top: 32px;
+    right: 23px;
+    cursor: pointer;
+}
+.modal-menu button{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+border: none;
+outline: none;
+background: #3661D6;
+border-radius: 6px;
+padding: 15px 143px;
+}
+.pop-wrapper{
+    width: 100%;
+    height: 100%;
+    color: grey;
+    opacity: 0.3;
+}
+.overlay{
+    position: fixed;
+    opacity: 0.3;
+    background-color: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+.tarif-block{
+    padding: 77px 0;
+}
+.tarif-block li{
+    list-style: none;
+    padding: 0 10px;
+}
+.tarif-block-title{
+    font-family: "Girloy Black";
+font-style: normal;
+font-size: 28px;
+line-height: 32px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #000000;
+text-align: center;
+margin-bottom: 30px;
+}
+.tarif-table-card{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+}
+.tarif-block-text{
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 50px;
+}
+.tarif-block-text span{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 22px;
+text-align: center;
+color:#1A7CC2;
+}
+.tarif-table-top{
+    font-family: "Girloy Bold";
+font-style: normal;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+background-color: #1A7CC2;
+width: 100%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+padding: 22px 0;
+}
+.tarif-table-ul ul{
+    margin: 24px 0 25px 0;
+
+}
+.tarif-table-ul ul li{
+    position: relative;
+    margin-left: 45px;
+    font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: #000000;
+margin-bottom: 9px;
+}
+.tarif-table-ul li::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: -20px;
+    background: #EA6A22;
+    border-radius: 50px;
+    transform: rotate(-45deg);}
+.tarif-table-bottom{
+    background: #EA6A22;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Girloy Bold";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 22px 0;
+    }
+.menu-wrapper ul li a.active{
+    color: #EA6A22;
+}
+#siteNotice{
+    display: flex;
+    justify-content: space-between;
+}
+#content img{
+    width: 95px;
+height: 93.29px;
+}
+#content {
+    
+font-family: "Girloy Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+color: #000000;
+
+}
+#bodyContent{
+    margin-left: 12px;
+}
+.gm-style-mtc{
+    display: none;
+}
+.gm-control-active{
+    display: none;
+}
+.gm-svpc{
+    display: none;
+}
+.gmnoprint{
+    display: none;
+}
+
+@media(max-width:1280px){
+    .img-glass img{
+        display: none;
+    }
+}
+
+@media(max-width:1024px){
+    header::after{
+        top: 165px;
+    }
+    .menu-wrapper ul li:not(:last-child) {
+        margin-right: 35px;
+    }
+    .nav-number{
+        font-size: 32px;
+    }
+    .reviews-question img{
+        top: unset;
+        width: 100%;
+        bottom: 0;
+    }
+    .question-card-button button{
+        padding: 17px 58px;
+    }
+    header::after {
+        top: 109px;
+    }
+    .service-left{
+        display: none;
+    }
+    .service-right{
+        margin: 0 auto;
+    }
+    .service-input input{
+        Width: 185px;
+    }
+    .application img{
+        display: none;
+    }
+    .tarif-card::before {
+        left: 64px;
+    }
+    .account-form button{
+        padding: 11px 65px;
+    }
+    .account-form input {
+        width: 230px;
+    }
+    .footer-phone {
+        font-size: 20px;
+    }
+    .footer-second{
+        margin-right: 20px;
+    }
+    .footer-third{
+        margin-right: 30px;
+    }
+    .footer-btn button{
+        padding: 9px 12px;
+    } 
+    .footer-btn button svg{
+        display: none;
+    }
+}
+@media(max-width:991px){
+    header::after {
+        top: 161px;
+    }
+    .menu-wrapper ul li{
+        font-size: 12px;
+    }
+    .menu-wrapper ul li:not(:last-child){
+        margin-right: 8px;
+    }.select_header{
+        padding: 4px;
+    }
+    .econom-img{
+        display: none;
+    }
+    .econom-card-1{
+        max-width: 50%;
+        
+    }
+    .econom-card-3{
+        max-width: 50%;
+    }
+    .econom-title{
+        font-size: 24px;
+    }
+    .econom-card-content.next{
+        margin-right: 30px;
+    }
+    .econom-card-content.bottom{
+        margin-left: 30px;
+     
+    }
+ 
+    .econom-text{
+        font-size: 16px;
+    }
+    .econom-text-left{
+        font-size: 16px;
+    }
+    .econom-card-3 .econom-icon{
+        align-self: flex-end;
+    }
+    .app-btn button{
+        padding: 17px 33px;
+    }
+    .tarif .col-lg-3{
+        margin-bottom: 40px;
+    }
+    .about-img::after{
+        display: none;
+    }
+    .account img{
+        display: none;
+    }
+    .work .col-md-6{
+        margin-bottom: 20px;
+    }
+    .worl-image{
+        display: none;
+    }
+    .footer-btn button svg{
+        display: none;
+    }
+    .tarif-card::before {
+        left: 126px;
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer-second {
+        margin-right: 30px;
+    }
+  
+
+}
+@media(min-width:768px){
+    .burger{
+        display: none;  
+    }
+    header{
+        display: block;
+    }
+  
+}
+@media(max-width:767px){
+    header{
+        display: none;
+    }
+    .burger-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger-menu-btn{
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+    .line.line1{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        top: 10px;
+        background: #3661D6;
+        border-radius: 3px;
+    }
+    .line.line2{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        top: 23px;
+        background: #3661D6;
+        border-radius: 3px;
+    }
+    .line.line3{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #3661D6;
+        border-radius: 3px;
+        bottom: 10px;
+    }
+    
+    .uzbek-p, .rus-p{
+        padding-right: 9px;
+    }
+    .burger-body{
+        width: 320px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        transition: all 0.5s ease-in-out;
+    }
+    .burger-body ul{
+        list-style: none;
+    }
+    .burger-body ul li{
+        margin-bottom: 20px;
+    }
+    .burger-body ul li a{
+        font-family:"Girloy Bold";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #0B1742;
+    }
+    .burger.active .burger-body{
+        left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .econom-card-content.prev,
+    .econom-card-content.next{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .econom-card-content.top,
+    .econom-card-content.bottom{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .econom-card-content.top{
+        height: 208px;
+    }
+    .econom-text{
+        text-align: center;
+    }
+    .econom-text-left{
+        text-align: center;
+    }
+    .econom-card-3 .econom-icon{
+        align-self: center;
+    }
+    .tarif-card::before {
+        left: 214px;
+    }
+    .question-card-button button {
+        padding: 17px 13px;
+    }
+    .question-card-button a{
+        font-size: 30px;
+    }
+    .footer-four{
+        display: none;
+    }
+    .app-btn button {
+        padding: 11px 5px;
+        font-size: 15px;
+    }
+    .service-input input[type="name"]{
+        display: none;
+    }   
+    .econom-title{
+        padding: 0;
+    }
+    .tarif-card::before {
+        left: 78px;
+    }
+    .econom-card-content.prev{
+        margin: 0;
+    }
+    .econom-text{
+        margin: 0;
+    }
+    .econom-card-content.next{
+        margin: 0;
+    }
+    .econom-card-content.top{
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .econom-text-left{
+        margin: 0;
+    }
+    .econom-card-3{
+        flex-direction: column-reverse;
+    }
+    .econom-card-content.bottom{
+        margin: 0;
+    }
+    .econom-card-1{
+        justify-content: space-between;
+    }
+    .footer-five{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    @media(max-width:425px){
+    .question-card-button button{
+        font-size: 12px;
+    }
+    
+    .account-form button {
+        padding: 5px 12px;
+    }
+    .account-text{
+        font-size: 25px;
+    }
+    .question-card-button a {
+        font-size: 26px;
+    }.question-card-button button {
+        padding: 8px 13px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .econom-content{
+        flex-wrap: wrap;
+    }
+    .service-input{
+        flex-wrap: wrap;
+    }
+    .apl row{
+        flex-wrap: wrap;
+    }
+    .service-title{
+        font-size:25px;
+        text-align: center;
+    }
+    .service-text{
+        font-size: 21px;
+        text-align: center;
+    }
+    .service-order-title{
+        font-size: 28px;
+    }
+    .service-order-text{
+        font-size: 12px;
+    }
+    .service input{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .service button{
+        margin: 0 auto;
+        padding: 16px 51px;
+    }
+    .econom-title {
+        font-size: 19px;
+    }
+    .econom-card-1{
+        min-width: 100%;
+    }
+    .econom-card-3{
+        min-width: 100%;
+    }
+    .econom-card-content.top{
+        justify-content: end;
+    }
+    .econom-card-content.prev{
+        margin-bottom: 20px;
+    }
+    .econom-card-content.next{
+        margin-bottom: 20px;
+    }
+    .econom-card-content.bottom{
+        margin-bottom: 20px;
+    }
+    .econom-card-3{
+        flex-direction: column;
+    }
+    .app-text{
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 25px;
+    }
+    .apl .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .app-btn{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .app-btn button{
+        margin-left: 0;
+    }
+    .tarif-card::before {
+        left: 118px;
+    }
+    .tarif-card{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .econom-card-1 .econom-card-content{
+        padding: 0;
+    }
+    .econom-card-content.top {
+        height: 167px;
+    }
+    .advantages-title{
+        line-height: 32px;
+    }
+    .row.reviews-content {
+        padding-bottom: 50px;
+    }
+    .work-img2,.work-img1{
+        display: none;
+    }   
+    .modal-menu.is_active{
+        width: 90%;
+    }
+    .modal-menu button{
+        width: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+    }
+}
+}
+@media(max-width:375px){
+    .burger-menu-btn{
+        width: 33px;
+    }
+    .select{
+        margin-right: 20px;
+    }
+    .tarif-card::before{
+        left: 101px;
+    }
+    .account{
+        height: unset;
+    }
+    .account-form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .account-form button {
+        padding: 9px 28px;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .question-card-button a {
+        font-size: 22px;
+    }
+    .modal-menu button{
+        padding: 15px 125px;
+    }
+}
+@media(max-width:320px){
+    .tarif-card::before {
+        left: 78px;
+    }
+    .about{
+        height: unset;
+    }
+    .about-img{
+        display: none;
+    }
+    .work-title{
+        line-height: 32px;
+    }
+    .question-card-button a{
+        font-size: 16px;
+    }
+    .footer-five{
+        align-items: flex-start;
+    }
+   
+    .app-text{
+        font-size: 22px;
+    }
+    .app-btn button{
+        font-size:  12px;
+    }
+    .about-title{
+        font-size: 25px;
+    }
+    .burger svg:not(:root){
+        margin-left: 20px;
+    }
+    .burger img{
+        width: 90%;
+    }
+    .select{
+        width: 25%; 
+    }
+    .burger-menu-btn{
+        width: 25%;   
+        display: flex;
+        justify-content: center;
+    }
+    .brand-name{
+        width: 50%;
+    }
+    .burger-body{
+        width: 75%;
+    }
+    .close_icon{
+        right: 13px;
+    }
+    .modal-menu button{
+        padding: 15px 59px;
+    }
+
+}
